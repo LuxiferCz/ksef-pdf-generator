@@ -13,7 +13,9 @@
   },
   "include": [
     "src/cli/**/*",
-    "src/lib/**/*"
+    "src/lib/**/*",
+    "src/lib-public/**/*",
+    "src/shared/**/*"
   ],
   "exclude": [
     "node_modules"
