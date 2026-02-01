@@ -2,6 +2,7 @@
   "name": "@akmf/ksef-fe-invoice-converter",
   "version": "0.0.42",
   "scripts": {
+    "prepare": "npm run build && npm run build:cli",
     "dev": "vite --mode public --config vite.config.ts",
     "build": "vite build --mode production",
     "build:cli": "tsc --project tsconfig.cli.json",
