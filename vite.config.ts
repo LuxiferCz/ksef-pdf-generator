@@ -39,12 +39,12 @@ export default defineConfig(({ mode }) => {
     },
 
     plugins: [
-      dts({
+      ...(!process.env.SKIP_DTS ? [dts({
         entryRoot: libRoot,
         insertTypesEntry: true,
         outDir: path.resolve(__dirname, 'dist'),
         exclude: ['src/app-public'],
-      }),
+      })] : []),
     ],
 
     server: {
